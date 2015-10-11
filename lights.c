@@ -43,23 +43,23 @@ static int g_attention = 0;
 char const*const RED_LED_FILE
         = "/sys/class/leds/red/brightness";
 char const*const RED_LED_BLINK_FILE
-        = "/sys/class/leds/red/pan_led";
+        = "/sys/class/leds/led:rgb_red/pan_oneshot";
 
 char const*const GREEN_LED_FILE
         = "/sys/class/leds/green/brightness";
 char const*const GREEN_LED_BLINK_FILE
-        = "/sys/class/leds/green/pan_led";
+        = "/sys/class/leds/led:rgb_green/pan_oneshot";
 
 char const*const BLUE_LED_FILE
         = "/sys/class/leds/blue/brightness";
 char const*const BLUE_LED_BLINK_FILE
-        = "/sys/class/leds/blue/pan_led";
+        = "/sys/class/leds/led:rgb_blue/pan_oneshot";
 
 char const*const LCD_FILE
         = "/sys/class/leds/lcd-backlight/brightness";
 
 char const*const BUTTON_FILE
-        = "/sys/class/leds/button-backlight/brightness";
+        = "/sys/class/leds/pan_tm_led/brightness";
 
 char const*const BATTERY_STATUS
         = "/sys/class/power_supply/battery/status";
