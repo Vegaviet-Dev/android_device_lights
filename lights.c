@@ -41,17 +41,17 @@ static struct light_state_t g_battery;
 static int g_attention = 0;
 
 char const*const RED_LED_FILE
-        = "/sys/class/leds/red/brightness";
+        = "/sys/class/leds/led:rgb_red/brightness";
 char const*const RED_LED_BLINK_FILE
         = "/sys/class/leds/led:rgb_red/pan_oneshot";
 
 char const*const GREEN_LED_FILE
-        = "/sys/class/leds/green/brightness";
+        = "/sys/class/leds/led:rgb_green/brightness";
 char const*const GREEN_LED_BLINK_FILE
         = "/sys/class/leds/led:rgb_green/pan_oneshot";
 
 char const*const BLUE_LED_FILE
-        = "/sys/class/leds/blue/brightness";
+        = "/sys/class/leds/led:rgb_blue/brightness";
 char const*const BLUE_LED_BLINK_FILE
         = "/sys/class/leds/led:rgb_blue/pan_oneshot";
 
